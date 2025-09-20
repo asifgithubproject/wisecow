@@ -1,0 +1,22 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+   name: wisecow-deployment
+   namespace: wisecow
+spec:
+   replicas: 2
+   selector:
+    matchLabels:
+     app: wisecow
+   template:
+     metadata:
+       name: wisecow-pod
+       labels:
+         app: wisecow
+     spec:
+      containers:
+        - name: wisecow-container
+          image: asifdevops09/wisecow-app:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 4499
