@@ -7,7 +7,7 @@ DISK_THRESHOLD=80
 PROC_THRESHOLD=300   
 
 # ---------- Log File ----------
-LOG_FILE="/var/log/system_health.log"
+LOG_FILE="/home/ubuntu/logs/system_health.log"
 
 # ---------- Get Metrics ----------
 CPU_USAGE=$(top -bn1 | grep "Cpu(s)" | awk '{print 100 - $8}' | cut -d. -f1)
