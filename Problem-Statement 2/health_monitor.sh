@@ -1,10 +1,4 @@
 #!/bin/bash
-# ------------------------------------------------------------------
-# File: /usr/local/bin/health_monitor.sh
-# Description: Monitors Linux system health (CPU, Memory, Disk, Processes)
-# Logs alerts if thresholds are exceeded with log rotation
-# Keeps last 10 rotated logs
-# ------------------------------------------------------------------
 
 # ---------- Configuration ----------
 CPU_THRESHOLD=80           # CPU usage percentage
